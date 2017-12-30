@@ -25,9 +25,9 @@ namespace LZFSESharp
             return compressedBuffer.Take(actualCompressedSize).ToArray();
         }
 
-        public static byte[] Decompress(byte[] buffer)
+        public static byte[] Decompress(byte[] buffer, int uncompressedSize = 0, int decompressionSizeFactor = 8)
         {
-            int decompressedSize = buffer.Length * 4;
+            int decompressedSize = uncompressedSize == 0 ? buffer.Length * decompressionSizeFactor : uncompressedSize;
             byte[] decompressedBuffer = new byte[decompressedSize];
             int actualDecompressedSize = lzfse_decode_buffer(decompressedBuffer, decompressedSize, buffer, buffer.Length);
 
