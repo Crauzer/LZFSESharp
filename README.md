@@ -3,6 +3,7 @@
 
 ## Compatibility
 The LZFSESharp project builds to .NET Framework 4.6.2.
+
 Durning compilation, the lzfse.dll file will be moved to the build directory.
 
 ## Usage:
