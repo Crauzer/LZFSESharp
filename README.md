@@ -1,5 +1,5 @@
 # LZFSESharp
- LZFSESharp is a .NET port of the lzfse compression algorithm which is being developed by Apple.
+ LZFSESharp is a .NET binding of the lzfse compression algorithm which is being developed by Apple.
 
 ## Compatibility
 The LZFSESharp project builds to .NET Framework 4.6.2.
